@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="classes and methods/Sess04 classes_and_methods.csproj" />
+  <Project Path="Sess01_csharp_intro/Sess01_csharp_intro.csproj" />
+  <Project Path="sess02_csharp_building_blocks/sess02_csharp_building_blocks.csproj" />
+</Solution>
