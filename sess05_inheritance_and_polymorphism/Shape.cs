@@ -12,7 +12,7 @@ namespace sess05_inheritance_and_polymorphism
     /// inherited by derived classes representing specific geometric shapes,
     /// which must provide their own implementation of the CalculateArea method.
     /// </remarks>
-    public abstract class Shape
+    public abstract  class Shape
     {
         /// <summary>
         /// Defines an abstract base class representing a geometric shape.
@@ -24,6 +24,6 @@ namespace sess05_inheritance_and_polymorphism
         /// inherited by derived classes representing specific geometric shapes,
         /// which must provide their own implementation of the CalculateArea method.
         /// </remarks>
-        public abstract float CalculateArea();
+        public abstract float CalculateArea(); 
     }
 }

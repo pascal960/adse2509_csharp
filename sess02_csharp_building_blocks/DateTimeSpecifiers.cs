@@ -27,12 +27,12 @@ namespace sess02_csharp_building_blocks
             Console.WriteLine($"Month of the year (y): {currDateTime:y}");
             Console.WriteLine(new string('-', 70));
 
- 
-// Custom date and time format specifiers
-Console.WriteLine("C# Custom Date & Time Format Specifiers");
-            Console.WriteLine(new string('-', 70));
 
-            Console.WriteLine($"Custom date (yyyy/MM/dd): " + currDateTime.ToString("yyyy/MM/dd"));
+            // Custom date and time format specifiers
+            Console.WriteLine("C# Custom Date & Time Format Specifiers");
+            Console.WriteLine(new string('-', 70));
+            Console.WriteLine($"Custom date (yyyy/MM/dd): {currDateTime:yyyy/MM/dd}");
+            Console.WriteLine($"Custom date (yyyy/MM/dd):" + currDateTime.ToString("yyyy/MM/dd"));
             Console.WriteLine($"Custom time with am/pm (hh:mm:ss tt): {currDateTime:hh:mm:ss tt}");
             Console.WriteLine($"Custom date with the day of the week (dddd, MMM, dd, yyyy): {currDateTime:dddd, MMM, dd, yyyy}");
             Console.WriteLine($"Custom time in 24-hour format (HH:mm:ss): {currDateTime:HH:mm:ss}");
@@ -41,12 +41,7 @@ Console.WriteLine("C# Custom Date & Time Format Specifiers");
             Console.WriteLine($"Custom date and time:\nDATE: (yyyy-MM-dd): {currDateTime:yyyy-MM-dd}\nTIME: (HH:mm:ss:fff): {currDateTime:HH:mm:ss:fff}");
             Console.WriteLine($"Custom Day of the month (M): {currDateTime:M}");
             Console.WriteLine($"Custom time in 24-hour format with time zone (HH:mm:ss zzz): {currDateTime:HH:mm:ss zzz}");
-
             Console.WriteLine(new string('-', 70));
-
-
-
-
         }
     }
 }
