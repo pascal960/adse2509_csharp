@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <StartupObject>sess08_namespaces_and_exceptions.DemoEmployee</StartupObject>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\sess04_classes_and_methods\sess04_classes_and_methods.csproj" />
+    <ProjectReference Include="..\sess07_properties_records_indexers\sess07_properties_records_indexers.csproj" />
+  </ItemGroup>
+
+</Project>

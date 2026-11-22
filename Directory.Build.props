@@ -1,0 +1,6 @@
+<Project>
+  <!-- Local helper: adds _local\CultureSetup.cs to every project so dates parse as day-month-year. -->
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)_local\CultureSetup.cs" Link="_local\CultureSetup.cs" Visible="false" />
+  </ItemGroup>
+</Project>
