@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace winforms_addnums
+namespace sess11_winforms_addnums
 {
     internal static class Program
     {

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace winforms_addnums.Properties
+namespace sess11_winforms_addnums.Properties
 {
 
 

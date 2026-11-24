@@ -1,6 +1,7 @@
 <Project>
-  <!-- Local helper: adds _local\CultureSetup.cs to every project so dates parse as day-month-year. -->
-  <ItemGroup>
+  <!-- Local helper: adds _local\CultureSetup.cs to every modern .NET project so dates parse as day-month-year.
+       Skipped for old .NET Framework projects (e.g. WinForms on v4.7.2), which can't compile it. -->
+  <ItemGroup Condition="'$(TargetFrameworkIdentifier)' == '.NETCoreApp'">
     <Compile Include="$(MSBuildThisFileDirectory)_local\CultureSetup.cs" Link="_local\CultureSetup.cs" Visible="false" />
   </ItemGroup>
 </Project>
