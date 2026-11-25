@@ -19,27 +19,40 @@ namespace sess11_winforms_addnums
         // Add button (also Alt+A, or Enter)
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            double first, second;
-
-            if (!double.TryParse(txtFirstNumber.Text, out first))
+            // Check that the first number has been entered
+            if (string.IsNullOrWhiteSpace(txtFirstNumber.Text))
             {
-                MessageBox.Show("Please enter a valid first number.", "Add Numbers",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please enter the first number.",
+                    "Missing First Number", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtFirstNumber.Focus();
-                txtFirstNumber.SelectAll();
-                return;
+                return; // Stop further method execution
             }
 
-            if (!double.TryParse(txtSecondNumber.Text, out second))
+            // Check that the second number has been entered
+            if (string.IsNullOrWhiteSpace(txtSecondNumber.Text))
             {
-                MessageBox.Show("Please enter a valid second number.", "Add Numbers",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please enter the second number.",
+                    "Missing Second Number", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtSecondNumber.Focus();
-                txtSecondNumber.SelectAll();
-                return;
+                return; // Stop further method execution
             }
 
-            txtAnswer.Text = (first + second).ToString();
+            try
+            {
+                int num1 = int.Parse(txtFirstNumber.Text);
+                int num2 = int.Parse(txtSecondNumber.Text);
+                txtAnswer.Text = (num1 + num2).ToString();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Please enter a valid numeric value e.g., '5'",
+                    "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"The error:\n'{ex.Message}' occurred!",
+                    "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         // Clear button (also Alt+L, or Edit > Clear / Ctrl+L)

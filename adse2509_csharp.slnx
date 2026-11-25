@@ -9,5 +9,7 @@
   <Project Path="sess08_namespaces_and_exceptions/sess08_namespaces_and_exceptions.csproj" />
   <Project Path="sess09_delegates_events_and_collections/sess09_delegates_events_and_collections.csproj" />
   <Project Path="sess10_generics_and_iterators/sess10_generics_and_iterators.csproj" Id="9c003e1d-00d0-473a-b71c-1c9a4a743671" />
+  <Project Path="my_sess10_practice/my_sess10_practice.csproj" />
   <Project Path="sess11_winforms_addnums/sess11_winforms_addnums.csproj" Id="e790a228-9e19-43b7-91fd-f0b7bbfa81c8" />
+  <Project Path="ADSE2509_Edulink_Student_Staff_WPF_DB/ADSE2509_Edulink_Student_Staff_WPF_DB.csproj" />
 </Solution>
