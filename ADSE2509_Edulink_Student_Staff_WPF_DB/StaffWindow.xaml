@@ -127,7 +127,7 @@
                     <TextBox Margin="5" Text="{Binding SelectedStaff.StaffID}"/>
 
                     <TextBlock Margin="5,5,5,0" FontWeight="SemiBold" Text="Birth Date"/>
-                    <TextBox Margin="5" Text="{Binding SelectedStaff.BirthDate}"/>
+                    <TextBox Margin="5" Text="{Binding SelectedStaff.BirthDate, StringFormat=dd-MM-yyyy}"/>
 
                     <TextBlock Margin="5,5,5,0" FontWeight="SemiBold" Text="Gender"/>
                     <TextBox Margin="5" Text="{Binding SelectedStaff.Gender}"/>
@@ -137,7 +137,7 @@
                 </StackPanel>
                 <StackPanel Grid.Column="1">
                     <TextBlock Margin="5,5,5,0" FontWeight="SemiBold" Text="Employment Date"/>
-                    <TextBox Margin="5" Text="{Binding SelectedStaff.EmploymentDate}"/>
+                    <TextBox Margin="5" Text="{Binding SelectedStaff.EmploymentDate, StringFormat=dd-MM-yyyy}"/>
 
                     <TextBlock Margin="5,5,5,0" FontWeight="SemiBold" Text="Phone No."/>
                     <TextBox Margin="5" Text="{Binding SelectedStaff.PhoneNo}"/>
@@ -185,14 +185,11 @@
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Staff ID" Binding="{Binding StaffID}"/>
                     <DataGridTextColumn Header="Name(s)" Binding="{Binding Names}"/>
-                    <DataGridTextColumn Header="Birth Date" Binding="{Binding BirthDate}"/>
+                    <DataGridTextColumn Header="Birth Date" Binding="{Binding BirthDate, StringFormat=dd-MM-yyyy}"/>
                     <DataGridTextColumn Header="Gender" Binding="{Binding Gender}"/>
                     <DataGridTextColumn Header="Email" Binding="{Binding Email}"/>
                     <DataGridTextColumn Header="Nationality" Binding="{Binding Nationality}"/>
-                    <DataGridTextColumn Header="EmploymentDate" Binding="{Binding EmploymentDate}"/>
-                    <DataGridTextColumn Header="Designation" Binding="{Binding Designation}"/>
-                    <DataGridTextColumn Header="Nationality" Binding="{Binding Nationality}"/>
-                    <DataGridTextColumn Header="EmploymentDate" Binding="{Binding EmploymentDate}"/>
+                    <DataGridTextColumn Header="Employment Date" Binding="{Binding EmploymentDate, StringFormat=dd-MM-yyyy}"/>
                     <DataGridTextColumn Header="Designation" Binding="{Binding Designation}"/>
                     <DataGridTextColumn Header="Phone Number" Binding="{Binding PhoneNo}"/>
                 </DataGrid.Columns>

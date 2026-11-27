@@ -181,13 +181,15 @@ namespace ADSE2509_Edulink_Student_Staff_WPF_DB
 
         public void Previous()
         {
-            StaffView.MoveCurrentToPrevious();
+            if (!StaffView.MoveCurrentToPrevious())
+                StaffView.MoveCurrentToFirst();
             SyncCurrentSelection();
         }
 
         public void Next()
         {
-            StaffView.MoveCurrentToNext();
+            if (!StaffView.MoveCurrentToNext())
+                StaffView.MoveCurrentToLast();
             SyncCurrentSelection();
         }
 

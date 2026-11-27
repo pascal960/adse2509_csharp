@@ -127,7 +127,7 @@
                     <TextBox Margin="5" Text="{Binding SelectedStudent.StudentNo}"/>
 
                     <TextBlock Margin="5,5,5,0" FontWeight="SemiBold" Text="Birth Date"/>
-                    <TextBox Margin="5" Text="{Binding SelectedStudent.BirthDate}"/>
+                    <TextBox Margin="5" Text="{Binding SelectedStudent.BirthDate, StringFormat=dd-MM-yyyy}"/>
 
                     <TextBlock Margin="5,5,5,0" FontWeight="SemiBold" Text="Course"/>
                     <TextBox Margin="5" Text="{Binding SelectedStudent.Course}"/>
@@ -140,7 +140,7 @@
                     <TextBox Margin="5" Text="{Binding SelectedStudent.Nationality}"/>
 
                     <TextBlock Margin="5,5,5,0" FontWeight="SemiBold" Text="Semester"/>
-                    <TextBox Margin="5" Text="{Binding SelectedStudent.currentSem}"/>
+                    <TextBox Margin="5" Text="{Binding SelectedStudent.CurrentSem}"/>
                 </StackPanel>
             </Grid>
         </Border>
@@ -180,7 +180,7 @@
                     <DataGridTextColumn Header="Name(s)" Binding="{Binding Names}"/>
                     <DataGridTextColumn Header="Student No." Binding="{Binding StudentNo}"/>
                     <DataGridTextColumn Header="Course" Binding="{Binding Course}"/>
-                    <DataGridTextColumn Header="Current Sem." Binding="{Binding currentSem}"/>
+                    <DataGridTextColumn Header="Current Sem." Binding="{Binding CurrentSem}"/>
                     <DataGridTextColumn Header="Email" Binding="{Binding Email}"/>
                 </DataGrid.Columns>
             </DataGrid>

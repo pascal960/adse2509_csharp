@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ADSE2509_Edulink_Student_Staff_WPF_DB"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize"
+        Background="#f3f8ff"
+        Title="Edulink College - Student &amp; Staff Records" Height="300" Width="460">
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+        <TextBlock Text="Edulink College" FontSize="24" FontWeight="SemiBold"
+                   Foreground="#1D4ED8" HorizontalAlignment="Center"/>
+        <TextBlock Text="Choose the records you want to manage" FontSize="13"
+                   Foreground="#4B5563" HorizontalAlignment="Center" Margin="0,4,0,20"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="_Students" Width="140" Height="40" Margin="8"
+                    Background="#2563EB" Foreground="White" FontWeight="SemiBold"
+                    Click="btnStudents_Click"/>
+            <Button Content="S_taff" Width="140" Height="40" Margin="8"
+                    Background="#2563EB" Foreground="White" FontWeight="SemiBold"
+                    Click="btnStaff_Click"/>
+        </StackPanel>
+    </StackPanel>
 </Window>
